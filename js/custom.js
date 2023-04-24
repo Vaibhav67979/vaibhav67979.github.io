@@ -34,3 +34,7 @@
     $('.social-links a').tooltip();
 
 })(jQuery);
+
+jQuery(function(){
+  jQuery('#mixit-container').mixItUp();
+});
