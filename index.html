@@ -16,70 +16,6 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="css/tooplate-style.css">
     
-    <style>
-      
-      .project-container {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        margin-bottom: 25px;
-      }
-
-      .project {
-        width: calc(33.33% - 20px);
-        box-sizing: border-box;
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: box-shadow 0.3s ease-in-out;
-      }
-      .project:hover {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-      }
-      
-      .project img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-      }
-
-      /* Dark Mode */
-      /* body.dark-mode .project h3 {
-        color: #484848;
-      } */
-
-      body.dark-mode .project {
-        background-color: #0c0c0d;
-        border: 1px solid #0c0c0d;
-        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-      }
-
-      /* Add new styles for dark mode on hover */
-      body.dark-mode .project:hover {
-        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
-      }
-
-      .project p {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-
-    </style>
-    
-<!--
-
-Tooplate 2115 Marvel
-
-https://www.tooplate.com/view/2115-marvel
-
--->
   </head>
   <body>
 
@@ -164,83 +100,42 @@ https://www.tooplate.com/view/2115-marvel
       <div class="col-lg-8 mx-auto text-center">
         <h2>My Projects</h2>
       </div>
-      <div class="project-container">
-        <div class="project" data-url="https://github.com/Vaibhav67979/ForgeScan">
+      <div class="project-filter">              
+        <ul>
+          <li class="filter-btn" data-category="aiml">AI/ML Projects</li>
+          <li class="filter-btn" data-category="webdev">Web Development Projects</li>
+        </ul>
+      </div>
+        
+      <ul class="mixit-container">
+        <li class="project aiml" data-url="https://github.com/Vaibhav67979/ForgeScan">
           <img src="images/project/1.png" alt="Project Image 1">
           <h3>ForgeScan - Forgery detection in Signature and handwriting</h3>
           <p>A web application that uses Siamese networks to detect fake signatures and handwriting in different languages and styles. It is integrated with Flask, a web framework.</p>
-        </div>
-        <div class="project" data-url="https://vaibhav67979.github.io/">
+        </li>
+        <li class="project webdev" data-url="https://vaibhav67979.github.io/">
           <img src="images/project/3.png" alt="Project Image 2">
           <h3>Portfolio Website</h3>
           <p>My personal portfolio website developed using HTML, CSS and JS showcasing my portfolio and projects</p>
-        </div>
-        <div class="project" data-url="https://vaibhav67979.github.io/Hotstar-Clone/">
+        </li>
+        <li class="project webdev" data-url="https://vaibhav67979.github.io/Hotstar-Clone/">
           <img src="images/project/2.png" alt="Project Image 3">
           <h3>Disney+ Hotstar Clone</h3>
           <p>A website that simulates the experience and interface of the disney+ hotstar streaming service, which delivers a range of content, such as movies, shows, and live sports. The website is built with html, css and js, which are the core technologies for web design.</p>
-        </div>
-      </div>
-  
-      <!-- <div class="project-container">
-        <div class="project">
-          <img src="images/project/1.png" alt="Project Image 1">
-          <h3>Project Name 1</h3>
-          <p>Project Description 1</p>
-        </div>
-        <div class="project">
-          <img src="images/project/2.png" alt="Project Image 2">
-          <h3>Project Name 2</h3>
-          <p>Project Description 2</p>
-        </div>
-        <div class="project">
-          <img src="images/project/3.png" alt="Project Image 3">
-          <h3>Project Name 3</h3>
-          <p>Project Description 3</p>
-        </div>
-      </div> -->
+        </li>
+      </ul>
+      
+      <script src="https://cdn.jsdelivr.net/npm/mixitup@3.4.1/dist/mixitup.min.js"></script>
+      <script>
+        var containerEl = document.querySelector('.project-container');
+        var mixer = mixitup(containerEl, {
+          selectors: {
+            control: '[data-mixitup-control]'
+          }
+        });
+      </script>
     </section>
     
-    <!-- PROJECTS -->
-    <!-- <section class="project py-5" id="project">
-         <div class="container"> -->
-          
-                      <!-- <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/1.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/2.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/3.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/5.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-                      </div> -->
-
-                  </div>
-                </div>
-        <!-- </div> -->
-    <!-- </section>  -->
 
     <!-- FEATURES -->
     <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
@@ -410,7 +305,7 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
-
+    <script type="text/javascript" src="js\jquery.mixitup.js"></script>
     <script>
       // Get all project elements
       const projects = document.querySelectorAll('.project');
@@ -424,6 +319,22 @@ https://www.tooplate.com/view/2115-marvel
           window.location.href = url;
         });
       });
+    </script>
+    <script>
+      $(document).ready(function() {
+        // Listen for click events on the filter buttons
+        $('.filter-btn').click(function() {
+          // Get the category of the clicked button
+          var category = $(this).data('category');
+          
+          // Hide all projects
+          $('.project').hide();
+          
+          // Show only projects that belong to the selected category
+          $('.' + category).show();
+        });
+      });
+
     </script>
   </body>
 </html>

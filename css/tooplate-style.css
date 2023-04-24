@@ -1,12 +1,3 @@
-/*
-
-Tooplate 2115 Marvel
-
-https://www.tooplate.com/view/2115-marvel
-
-*/
-
-
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 body {
   font-family: "Maven Pro", sans-serif;
@@ -464,6 +455,110 @@ b, strong {
 .social-links .uil:hover {
   color: #ffc200;
 }
+
+ .mixit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.project {
+  flex-basis: calc(33.33% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.project:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+body.dark-mode .project {
+  background-color: #0c0c0d;
+  border: 1px solid #0c0c0d;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Add new styles for dark mode on hover */
+body.dark-mode .project:hover {
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.project-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.project-filter ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-filter li {
+  margin: 0 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-filter li.active {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #333;
+}
+
+.project-filter li:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+body.dark-mode .project-filter li {
+  border-color: #ccc;
+  background-color: #0c0c0d;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Add new styles for dark mode on hover */
+body.dark-mode .project-filter li:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #fff;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+#mixit-container .mix {
+  display: none;
+}
+
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
