@@ -1,8 +1,0 @@
-ForgeScan :
-    As a developer, I have created a web-based application that utilizes advanced technology to detect forgeries in signatures and handwriting. This application employs siamese networks, a type of neural network, to compare uploaded handwriting and signature samples with known genuine samples. The system is integrated using Flask, a web framework in Python, providing an easy-to-use interface for users to upload and compare their samples.
-
-With this application, I aim to provide a reliable and automated method for detecting forgeries in signatures and handwriting, which is useful in a range of fields, including forensic analysis, fraud detection, and document authentication. The use of siamese networks enables the system to learn subtle differences between genuine and forged samples, making it more accurate than traditional methods.
-
-This project is an excellent example of my skills in machine learning and web development, and I am excited to showcase it as a part of my portfolio. I am passionate about leveraging technology to solve real-world problems, and this application is a perfect demonstration of my dedication to this cause.
-
-
